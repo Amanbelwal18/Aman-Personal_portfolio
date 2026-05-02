@@ -42,20 +42,20 @@ const About = () => {
           </h3>
           {/* About Me Paragraph */}
           <p className="mt-8 mb-10 text-base leading-relaxed text-gray-400 sm:text-lg md:text-lg">
-            I am a prefinal year B.Tech CSE student at THDC-IHET, passionate 
+            I am a prefinal year B.Tech CSE student at THDC-IHET, passionate
             about solving problems through code and building clean, efficient
             solutions.<p>
-            With a strong foundation in Java programming. I’m also actively
-            practicing Data Structures & Algorithms on Leet code to strengthen
-            my problem-solving and coding speed.</p><p>
-            I love turning complex problems into simple solutions and
-            constantly explore new tools and technologies to improve my skill
-            set. From debugging tricky code to learning how systems work
-            behind the scenes, I enjoy every part of the journey.</p>
+              With a strong foundation in Java programming. I’m also actively
+              practicing Data Structures & Algorithms on Leet code to strengthen
+              my problem-solving and coding speed.</p><p>
+              I love turning complex problems into simple solutions and
+              constantly explore new tools and technologies to improve my skill
+              set. From debugging tricky code to learning how systems work
+              behind the scenes, I enjoy every part of the journey.</p>
           </p>
           {/* Resume Button */}
           <a
-            href="/Aman-Belwal-Resume.pdf"
+            href="https://drive.google.com/file/d/1RE0_2iy1n1P81PZ_3eqXnOVDkLfQ_15y/view?usp=sharing"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block px-8 py-3 mt-5 text-lg font-bold text-white transition duration-300 transform rounded-full hover:scale-105"
@@ -66,7 +66,7 @@ const About = () => {
           >
             DOWNLOAD CV
           </a>
-        
+
         </div>
         {/* Right Side */}
         <div className="flex justify-center md:w-1/2 md:justify-end">
