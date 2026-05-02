@@ -1,0 +1,170 @@
+/* RESET */
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+/* GLOBAL */
+html, body{
+  width:100%;
+  overflow-x:hidden;
+  scroll-behavior:smooth;
+}
+
+body{
+  font-family:Arial, sans-serif;
+  background:#050414;
+}
+
+/* APP CONTAINER */
+.app-container{
+  position:relative;
+  width:100%;
+  overflow:hidden;
+}
+
+/* PROGRESS BAR */
+.progress-bar{
+  position:fixed;
+  top:0;
+  left:0;
+  right:0;
+  height:4px;
+  background:#8b5cf6;
+  transform-origin:left;
+  z-index:100;
+}
+
+/* BACKGROUNDS */
+.blob-container,
+.grid-overlay{
+  position:fixed;
+  inset:0;
+  pointer-events:none;
+  z-index:0;
+}
+
+.grid-overlay{
+  background:
+  linear-gradient(to right,#4f4f4f2e 1px,transparent 1px),
+  linear-gradient(to bottom,#4f4f4f2e 1px,transparent 1px);
+  background-size:14px 24px;
+  mask-image:radial-gradient(ellipse 60% 50% at 50% 0%,#000 70%,transparent 100%);
+}
+
+/* WRAPPER */
+.sections-wrapper{
+  position:relative;
+  overflow:visible;
+}
+
+/* SECTIONS */
+.section{
+  min-height:100vh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:80px 20px 120px; /* extra bottom space for icon */
+  position:relative;
+  background:#050414;
+  scroll-margin-top:80px;
+}
+
+/* CONTAINER */
+.container{
+  width:90%;
+  max-width:1200px;
+  margin:auto;
+}
+
+/* FLEX */
+.row{
+  display:flex;
+  flex-wrap:wrap;
+  gap:20px;
+}
+
+/* CARD */
+.card{
+  position:relative; /* ✅ anchor for middle icon */
+  width:100%;
+  background:#0f172a;
+  border-radius:20px;
+  padding:30px;
+  box-shadow:0 0 20px rgba(139,92,246,0.2);
+}
+
+/* 🔥 MIDDLE ICON FIX */
+.middle-icon{
+  position:absolute;
+  left:50%;
+  bottom:-30px;
+  transform:translateX(-50%);
+  
+  width:60px;
+  height:60px;
+  border-radius:50%;
+  
+  background:#0f172a;
+  border:3px solid #8b5cf6;
+  
+  display:flex;
+  align-items:center;
+  justify-content:center;
+
+  z-index:10;
+
+  box-shadow:0 0 20px rgba(139,92,246,0.6);
+}
+
+/* ICON IMAGE */
+.middle-icon img{
+  width:70%;
+  height:70%;
+  object-fit:contain;
+}
+
+/* IMAGES */
+img{
+  max-width:100%;
+  height:auto;
+  display:block;
+}
+
+/* EXPERIENCE HEADER */
+.experience-header{
+  display:flex;
+  align-items:center;
+  gap:15px;
+}
+
+.experience-logo{
+  width:60px;
+  height:60px;
+  object-fit:contain;
+}
+
+/* RESPONSIVE */
+@media(max-width:1024px){
+  .section{
+    padding:70px 20px 110px;
+  }
+}
+
+@media(max-width:768px){
+  .row{
+    flex-direction:column;
+  }
+
+  .section{
+    min-height:auto;
+    padding:60px 20px 100px;
+  }
+}
+
+@media(max-width:480px){
+  .section{
+    padding:50px 15px 90px;
+  }
+}
