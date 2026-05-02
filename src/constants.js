@@ -59,8 +59,6 @@ export const SkillsInfo = [
       { name: 'Springboot', logo: springbootLogo },
       { name: 'Node JS', logo: nodejsLogo },
       { name: 'MySQL', logo: mysqlLogo },
-      { name: 'Firebase', logo: firebaseLogo },
-      { name: 'PostgreSQL', logo: postgreLogo },
     ],
   },
   {
@@ -80,7 +78,6 @@ export const SkillsInfo = [
       { name: 'GitHub', logo: githubLogo },
       { name: 'VS Code', logo: vscodeLogo },
       { name: 'Postman', logo: postmanLogo },
-      { name: 'Figma', logo: figmaLogo },
     ],
   },
 ];
